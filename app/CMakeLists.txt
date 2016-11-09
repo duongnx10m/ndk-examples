@@ -4,6 +4,8 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds it for you.
@@ -20,6 +22,7 @@ add_library( # Sets the name of the library.
              # file are automatically included.
              src/main/cpp/native-lib.cpp
              src/main/cpp/bitmap-plasma.c
+             src/main/cpp/hello-gl2.cpp
              )
 
 # Searches for a specified prebuilt library and stores the path as a
@@ -43,6 +46,7 @@ target_link_libraries( # Specifies the target library.
                        native-lib
                        -llog
                        -ljnigraphics
+                       -lGLESv2
 
                        # Links the target library to the log library
                        # included in the NDK.

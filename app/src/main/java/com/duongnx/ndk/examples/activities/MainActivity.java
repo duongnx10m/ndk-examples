@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
         System.loadLibrary("native-lib");
     }
 
-    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI, Defines.BITMAP_PLASMA};
+    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2};
 
     private RecyclerView recyclerView;
     private MainAdapter mAdapter;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
                 intent = new Intent(this, PlasmaActivity.class);
                 break;
             case Defines.HELLO_GL2:
-                //intent = new Intent(this, GL2JNIActivity.class);
+                intent = new Intent(this, GL2JNIActivity.class);
                 break;
             case Defines.NATIVE_PLASMA:
                 //intent = new Intent(this, NativeActivity.class);

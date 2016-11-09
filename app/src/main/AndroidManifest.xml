@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".activities.HelloJniActivity"></activity>
         <activity android:name=".activities.PlasmaActivity"></activity>
+        <activity android:name=".activities.GL2JNIActivity"></activity>
     </application>
 
 </manifest>

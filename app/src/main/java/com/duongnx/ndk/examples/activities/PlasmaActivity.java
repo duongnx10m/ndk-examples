@@ -28,6 +28,10 @@ import android.view.WindowManager;
 import com.duongnx.ndk.examples.Defines;
 
 public class PlasmaActivity extends BaseActivity {
+    static {
+        System.loadLibrary("plasma");
+    }
+
     @Override
     protected String getGithubLink() {
         return Defines.GIT_BITMAP_PLASMA;

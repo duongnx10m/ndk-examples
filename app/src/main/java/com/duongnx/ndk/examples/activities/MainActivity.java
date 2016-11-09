@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.duongnx.lib.hellojni.*;
 import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
@@ -19,9 +20,6 @@ import com.duongnx.ndk.examples.adapter.MainAdapter;
 public class MainActivity extends AppCompatActivity implements MainAdapter.OnRecyclerItemClickListener {
 
     // Used to load the 'native-lib' library on application startup.
-    static {
-        System.loadLibrary("native-lib");
-    }
 
     public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2};
 

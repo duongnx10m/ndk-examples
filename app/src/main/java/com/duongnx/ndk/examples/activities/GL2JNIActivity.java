@@ -24,6 +24,10 @@ import com.duongnx.ndk.examples.wigets.GL2JNIView;
 
 public class GL2JNIActivity extends BaseActivity {
 
+    static {
+        System.loadLibrary("gl2jni");
+    }
+
     private GL2JNIView mView;
 
     @Override

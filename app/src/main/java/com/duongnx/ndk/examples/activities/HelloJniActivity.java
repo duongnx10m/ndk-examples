@@ -12,6 +12,10 @@ import com.duongnx.ndk.examples.Defines;
 
 public class HelloJniActivity extends BaseActivity {
 
+    static {
+        System.loadLibrary("hello-jni");
+    }
+
     @Override
     protected String getGithubLink() {
         return Defines.GIT_HELLO_JNI;

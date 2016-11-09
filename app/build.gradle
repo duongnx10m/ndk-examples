@@ -35,7 +35,13 @@ dependencies {
     compile "$supportName:appcompat-v7:$supportVersion",
             "$supportName:recyclerview-v7:$supportVersion"
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+
     compile project(':hellojni')
     compile project(':bitmapplasma')
     compile project(':hellogl2')
+    compile project(':gles3jni')
+    compile project(':hello_jni_callback')
+    compile project(':helloneon')
+    compile project(':san_angeles')
 }

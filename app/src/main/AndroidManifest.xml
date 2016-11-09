@@ -18,7 +18,10 @@
         <activity android:name=".activities.HelloJniActivity"></activity>
         <activity android:name=".activities.PlasmaActivity"></activity>
         <activity android:name=".activities.GL2JNIActivity"></activity>
-
+        <activity android:name=".activities.GLES3JNIActivity"></activity>
+        <activity android:name=".activities.JniCallbackActivity"></activity>
+        <activity android:name=".activities.HelloNeonActivity"></activity>
+        <activity android:name=".activities.SanAngelActivity"></activity>
     </application>
 
 </manifest>

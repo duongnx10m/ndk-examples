@@ -13,9 +13,10 @@ public class Defines {
     public static final String GIT_HELLO_GL2 = GIT_SERVER + "/hello-gl2";
 
     public static final String HELLO_JNI = "hello - jni";
-
     public static final String HELLO_GL2 = "hello - gl2";
     public static final String BITMAP_PLASMA = "bitmap - plasma";
-    public static final String NATIVE_PLASMA = "native - plasma";
-    public static final String NATIVE_AUDIO = "native - audio";
+    public static final String GLES3_JNI = "gles3 - jni";
+    public static final String JNI_CALLBACK = "hello jni callback";
+    public static final String HELLO_NEON = "hello - neon";
+    public static final String SAN_ANGELES = "san - angeles";
 }

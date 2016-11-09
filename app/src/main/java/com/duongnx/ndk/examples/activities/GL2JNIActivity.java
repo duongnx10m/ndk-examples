@@ -19,6 +19,7 @@ package com.duongnx.ndk.examples.activities;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.wigets.GL2JNIView;
 
 
@@ -40,6 +41,7 @@ public class GL2JNIActivity extends BaseActivity {
         super.onCreate(icicle);
         mView = new GL2JNIView(getApplication());
         setContentView(mView);
+        setTitle(Defines.HELLO_GL2);
     }
 
     @Override

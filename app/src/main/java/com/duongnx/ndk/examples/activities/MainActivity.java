@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
 
     // Used to load the 'native-lib' library on application startup.
 
-    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2};
+    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2, Defines.GLES3_JNI, Defines.JNI_CALLBACK, Defines.HELLO_NEON, Defines.SAN_ANGELES};
 
     private RecyclerView recyclerView;
     private MainAdapter mAdapter;
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle(R.string.title_name);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         initListView();
         if (mAdapter == null) {
@@ -60,13 +61,18 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
             case Defines.HELLO_GL2:
                 intent = new Intent(this, GL2JNIActivity.class);
                 break;
-            case Defines.NATIVE_PLASMA:
-                //intent = new Intent(this, NativeActivity.class);
+            case Defines.GLES3_JNI:
+                intent = new Intent(this, GLES3JNIActivity.class);
                 break;
-            case Defines.NATIVE_AUDIO:
-                //intent = new Intent(this, NativeAudioActivity.class);
+            case Defines.JNI_CALLBACK:
+                intent = new Intent(this, JniCallbackActivity.class);
                 break;
-
+            case Defines.HELLO_NEON:
+                intent = new Intent(this, HelloNeonActivity.class);
+                break;
+            case Defines.SAN_ANGELES:
+                intent = new Intent(this, SanAngelActivity.class);
+                break;
         }
         if (intent != null) {
             startActivity(intent);

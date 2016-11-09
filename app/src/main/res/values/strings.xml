@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">NdkExamples</string>
+    <string name="app_name">NDK Example</string>
+    <string name="title_name">NDK Examples</string>
 </resources>

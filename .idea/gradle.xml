@@ -11,8 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bitmapplasma" />
+            <option value="$PROJECT_DIR$/gles3jni" />
+            <option value="$PROJECT_DIR$/hello_jni_callback" />
             <option value="$PROJECT_DIR$/hellogl2" />
             <option value="$PROJECT_DIR$/hellojni" />
+            <option value="$PROJECT_DIR$/helloneon" />
+            <option value="$PROJECT_DIR$/san_angeles" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

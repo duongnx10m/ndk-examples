@@ -4,10 +4,9 @@
 
     <item
         android:id="@+id/menu_view_source"
-        android:icon="@drawable/ic_source"
         android:orderInCategory="1"
         android:title="View Source"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/menu_copy_link"

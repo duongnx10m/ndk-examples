@@ -46,4 +46,5 @@ dependencies {
     compile project(':san_angeles')
     compile project(':sensorgraph')
     compile project(':nativeplasma')
+    compile project(':nativeactivity')
 }

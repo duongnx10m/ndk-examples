@@ -31,4 +31,5 @@ public class Defines {
     public static final String SAN_ANGELES = "san - angeles";
     public static final String SENSOR_GRAPH = "sansor - grapth";
     public static final String NATIVE_PLASMA = "native - plasma";
+    public static final String NATIVE_ACTIVITY = "native - activity";
 }

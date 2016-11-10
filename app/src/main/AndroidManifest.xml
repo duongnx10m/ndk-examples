@@ -23,6 +23,11 @@
         <activity android:name=".activities.HelloNeonActivity"></activity>
         <activity android:name=".activities.SanAngelActivity"></activity>
         <activity android:name=".activities.AccelerometerGraphActivity"></activity>
+        <activity android:name=".activities.NativePlasmaActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="native-plasma" />
+        </activity>
     </application>
 
 </manifest>

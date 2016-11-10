@@ -20,6 +20,7 @@ public class Defines {
     public static final String GIT_HELLO_NEON = GIT_SERVER + "/hello-neon";
     public static final String GIT_SANANGEL = GIT_SERVER + "/san-angeles";
     public static final String GIT_SENSOR_GRAPH = GIT_SERVER + "/sensor-graph";
+    public static final String GIT_NATIVE_PLASMA = "native - plasma";
 
     public static final String HELLO_JNI = "hello - jni";
     public static final String HELLO_GL2 = "hello - gl2";
@@ -29,4 +30,5 @@ public class Defines {
     public static final String HELLO_NEON = "hello - neon";
     public static final String SAN_ANGELES = "san - angeles";
     public static final String SENSOR_GRAPH = "sansor - grapth";
+    public static final String NATIVE_PLASMA = "native - plasma";
 }

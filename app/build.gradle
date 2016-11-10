@@ -18,7 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    
 }
 
 ext {
@@ -45,4 +45,5 @@ dependencies {
     compile project(':helloneon')
     compile project(':san_angeles')
     compile project(':sensorgraph')
+    compile project(':nativeplasma')
 }

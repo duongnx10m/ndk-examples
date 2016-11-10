@@ -33,4 +33,5 @@ public class Defines {
     public static final String NATIVE_PLASMA = "native - plasma";
     public static final String NATIVE_ACTIVITY = "native - activity";
     public static final String NATIVE_AUDIO = "native - audio";
+    public static final String NATIVE_MEDIA = "native - media";
 }

@@ -18,7 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    
+
 }
 
 ext {
@@ -48,4 +48,5 @@ dependencies {
     compile project(':nativeplasma')
     compile project(':nativeactivity')
     compile project(':nativeaudio')
+    compile project(':nativemedia')
 }

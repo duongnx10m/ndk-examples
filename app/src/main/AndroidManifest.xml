@@ -44,6 +44,7 @@
                 android:value="native-activity" />
         </activity>
         <activity android:name=".activities.NativeAudioActivity"></activity>
+        <activity android:name=".activities.NativeMediaActivity"></activity>
     </application>
 
 </manifest>

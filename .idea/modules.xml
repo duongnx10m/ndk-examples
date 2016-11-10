@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/hellojni/hellojni.iml" filepath="$PROJECT_DIR$/hellojni/hellojni.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloneon/helloneon.iml" filepath="$PROJECT_DIR$/helloneon/helloneon.iml" />
       <module fileurl="file://$PROJECT_DIR$/nativeactivity/nativeactivity.iml" filepath="$PROJECT_DIR$/nativeactivity/nativeactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nativeaudio/nativeaudio.iml" filepath="$PROJECT_DIR$/nativeaudio/nativeaudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/nativeplasma/nativeplasma.iml" filepath="$PROJECT_DIR$/nativeplasma/nativeplasma.iml" />
       <module fileurl="file://$PROJECT_DIR$/ndk-examples.iml" filepath="$PROJECT_DIR$/ndk-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/san_angeles/san_angeles.iml" filepath="$PROJECT_DIR$/san_angeles/san_angeles.iml" />

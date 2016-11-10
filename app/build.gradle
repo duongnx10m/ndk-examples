@@ -47,4 +47,5 @@ dependencies {
     compile project(':sensorgraph')
     compile project(':nativeplasma')
     compile project(':nativeactivity')
+    compile project(':nativeaudio')
 }

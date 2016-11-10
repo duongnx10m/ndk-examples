@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
             Defines.BITMAP_PLASMA, Defines.HELLO_GL2,
             Defines.GLES3_JNI, Defines.JNI_CALLBACK, Defines.HELLO_NEON,
             Defines.SAN_ANGELES, Defines.SENSOR_GRAPH,
-            Defines.NATIVE_PLASMA,Defines.NATIVE_ACTIVITY};
+            Defines.NATIVE_PLASMA, Defines.NATIVE_ACTIVITY, Defines.NATIVE_AUDIO};
 
     private RecyclerView recyclerView;
     private MainAdapter mAdapter;
@@ -86,6 +86,9 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
                 break;
             case Defines.NATIVE_ACTIVITY:
                 intent = new Intent(this, com.duongnx.ndk.examples.activities.NativeActivity.class);
+                break;
+            case Defines.NATIVE_AUDIO:
+                intent = new Intent(this, NativeAudioActivity.class);
                 break;
         }
         if (intent != null) {

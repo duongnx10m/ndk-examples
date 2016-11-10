@@ -43,6 +43,7 @@ public class PlasmaActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         Display display = getWindowManager().getDefaultDisplay();
         setContentView(new PlasmaView(this, display.getWidth(), display.getHeight()));
+        setTitle(Defines.BITMAP_PLASMA);
     }
 
 }

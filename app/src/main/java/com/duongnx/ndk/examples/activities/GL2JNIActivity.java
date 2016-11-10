@@ -33,7 +33,7 @@ public class GL2JNIActivity extends BaseActivity {
 
     @Override
     protected String getGithubLink() {
-        return null;
+        return Defines.GIT_HELLO_GL2;
     }
 
     @Override

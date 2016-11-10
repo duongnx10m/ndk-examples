@@ -11,7 +11,7 @@ public class HelloNeonActivity extends BaseActivity {
 
     @Override
     protected String getGithubLink() {
-        return null;
+        return Defines.GIT_HELLO_NEON;
     }
 
     @Override

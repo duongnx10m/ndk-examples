@@ -8,10 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.duongnx.lib.hellojni.*;
 import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
+import com.duongnx.ndk.examples.utils.Utils;
 
 /**
  * Created by duongnx on 11/4/16.
@@ -21,7 +21,10 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
 
     // Used to load the 'native-lib' library on application startup.
 
-    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2, Defines.GLES3_JNI, Defines.JNI_CALLBACK, Defines.HELLO_NEON, Defines.SAN_ANGELES};
+    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI,
+            Defines.BITMAP_PLASMA, Defines.HELLO_GL2,
+            Defines.GLES3_JNI, Defines.JNI_CALLBACK, Defines.HELLO_NEON,
+            Defines.SAN_ANGELES, Defines.SENSOR_GRAPH};
 
     private RecyclerView recyclerView;
     private MainAdapter mAdapter;
@@ -73,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
             case Defines.SAN_ANGELES:
                 intent = new Intent(this, SanAngelActivity.class);
                 break;
+            case Defines.SENSOR_GRAPH:
+                intent = new Intent(this, AccelerometerGraphActivity.class);
+                break;
         }
         if (intent != null) {
             startActivity(intent);
@@ -81,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -89,7 +95,16 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_view_source:
+                Utils.startActivityWithUrl(this, Defines.GIT_MY_SOURCE);
                 break;
+            case R.id.menu_rate: {
+                Utils.startActivityWithUrl(this, Defines.RATE);
+                break;
+            }
+            case R.id.menu_more: {
+                Utils.startActivityWithUrl(this, Defines.MORE_APPS);
+            }
+            break;
         }
         return true;
     }

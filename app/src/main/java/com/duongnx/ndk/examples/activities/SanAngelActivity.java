@@ -50,10 +50,12 @@ import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.view.MotionEvent;
 
+import com.duongnx.ndk.examples.Defines;
+
 public class SanAngelActivity extends BaseActivity {
     @Override
     protected String getGithubLink() {
-        return null;
+        return Defines.GIT_SANANGEL;
     }
 
     @Override
@@ -61,6 +63,7 @@ public class SanAngelActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         mGLView = new DemoGLSurfaceView(this);
         setContentView(mGLView);
+        setTitle(Defines.SAN_ANGELES);
     }
 
     @Override

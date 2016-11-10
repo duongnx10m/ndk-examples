@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/helloneon/helloneon.iml" filepath="$PROJECT_DIR$/helloneon/helloneon.iml" />
       <module fileurl="file://$PROJECT_DIR$/ndk-examples.iml" filepath="$PROJECT_DIR$/ndk-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/san_angeles/san_angeles.iml" filepath="$PROJECT_DIR$/san_angeles/san_angeles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensorgraph/sensorgraph.iml" filepath="$PROJECT_DIR$/sensorgraph/sensorgraph.iml" />
     </modules>
   </component>
 </project>

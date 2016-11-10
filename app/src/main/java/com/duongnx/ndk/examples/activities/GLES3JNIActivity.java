@@ -30,7 +30,7 @@ public class GLES3JNIActivity extends BaseActivity {
 
     @Override
     protected String getGithubLink() {
-        return null;
+        return Defines.GIT_GLES3_JNI;
     }
 
     GLES3JNIView mView;

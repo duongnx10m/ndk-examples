@@ -22,6 +22,7 @@
         <activity android:name=".activities.JniCallbackActivity"></activity>
         <activity android:name=".activities.HelloNeonActivity"></activity>
         <activity android:name=".activities.SanAngelActivity"></activity>
+        <activity android:name=".activities.AccelerometerGraphActivity"></activity>
     </application>
 
 </manifest>

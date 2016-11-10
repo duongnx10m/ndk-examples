@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/hellojni" />
             <option value="$PROJECT_DIR$/helloneon" />
             <option value="$PROJECT_DIR$/san_angeles" />
+            <option value="$PROJECT_DIR$/sensorgraph" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

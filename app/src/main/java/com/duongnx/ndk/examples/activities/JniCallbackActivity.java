@@ -32,7 +32,7 @@ public class JniCallbackActivity extends BaseActivity {
 
     @Override
     protected String getGithubLink() {
-        return null;
+        return Defines.GIT_HELLO_JNI_CALLBACK;
     }
 
     @Override

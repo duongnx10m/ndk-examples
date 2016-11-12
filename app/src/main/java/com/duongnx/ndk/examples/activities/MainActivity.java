@@ -3,102 +3,61 @@ package com.duongnx.ndk.examples.activities;
 import android.app.NativeActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
+import com.duongnx.ndk.examples.fragments.FrgNdkExample;
 import com.duongnx.ndk.examples.utils.Utils;
 
 /**
  * Created by duongnx on 11/4/16.
  */
 
-public class MainActivity extends AppCompatActivity implements MainAdapter.OnRecyclerItemClickListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     // Used to load the 'native-lib' library on application startup.
-
-    public static final String[] NDK_EXAMPLES = {Defines.HELLO_JNI,
-            Defines.BITMAP_PLASMA, Defines.HELLO_GL2,
-            Defines.GLES3_JNI, Defines.JNI_CALLBACK, Defines.HELLO_NEON,
-            Defines.SAN_ANGELES, Defines.SENSOR_GRAPH,
-            Defines.NATIVE_PLASMA, Defines.NATIVE_ACTIVITY,
-            Defines.NATIVE_AUDIO, Defines.NATIVE_MEDIA};
-
-    private RecyclerView recyclerView;
-    private MainAdapter mAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
+        initViews();
         setTitle(R.string.title_name);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        initListView();
-        if (mAdapter == null) {
-            mAdapter = new MainAdapter(this, NDK_EXAMPLES);
-            mAdapter.setOnRecyclerItemClickListener(this);
-        }
 
-        recyclerView.setAdapter(mAdapter);
-
+        FrgNdkExample frgNdkExample = new FrgNdkExample();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content, frgNdkExample);
+        fragmentTransaction.addToBackStack(frgNdkExample.getClass().getSimpleName());
+        fragmentTransaction.commitAllowingStateLoss();
     }
 
-    private void initListView() {
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
+    private void initViews() {
+        // set up toolbar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        // set up drawerlayout
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0);
+        drawerLayout.setDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
-    @Override
-    public void onRecyclerItemClick(int position) {
-        String name = mAdapter.getItem(position);
-        Intent intent = null;
-        switch (name) {
-            case Defines.HELLO_JNI:
-                intent = new Intent(this, HelloJniActivity.class);
-                break;
-            case Defines.BITMAP_PLASMA:
-                intent = new Intent(this, PlasmaActivity.class);
-                break;
-            case Defines.HELLO_GL2:
-                intent = new Intent(this, GL2JNIActivity.class);
-                break;
-            case Defines.GLES3_JNI:
-                intent = new Intent(this, GLES3JNIActivity.class);
-                break;
-            case Defines.JNI_CALLBACK:
-                intent = new Intent(this, JniCallbackActivity.class);
-                break;
-            case Defines.HELLO_NEON:
-                intent = new Intent(this, HelloNeonActivity.class);
-                break;
-            case Defines.SAN_ANGELES:
-                intent = new Intent(this, SanAngelActivity.class);
-                break;
-            case Defines.SENSOR_GRAPH:
-                intent = new Intent(this, AccelerometerGraphActivity.class);
-                break;
-            case Defines.NATIVE_PLASMA:
-                intent = new Intent(this, NativePlasmaActivity.class);
-                break;
-            case Defines.NATIVE_ACTIVITY:
-                intent = new Intent(this, com.duongnx.ndk.examples.activities.NativeActivity.class);
-                break;
-            case Defines.NATIVE_AUDIO:
-                intent = new Intent(this, NativeAudioActivity.class);
-                break;
-            case Defines.NATIVE_MEDIA:
-                intent = new Intent(this, NativeMediaActivity.class);
-                break;
-        }
-        if (intent != null) {
-            startActivity(intent);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -121,6 +80,11 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnRec
             }
             break;
         }
+        return true;
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return true;
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ndk_ex"
+            android:checked="true"
+            android:icon="@drawable/ic_source"
+            android:title="Ndk Examples"></item>
+
+        <item
+            android:id="@+id/nav_teapot"
+            android:icon="@drawable/ic_source"
+            android:title="Tea Pot"></item>
+
+        <item
+            android:id="@+id/nav_game"
+            android:icon="@drawable/ic_source"
+            android:title="Mini Games"></item>
+
+
+    </group>
+</menu>

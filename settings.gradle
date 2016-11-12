@@ -1,1 +1,1 @@
-include ':app', ':hellojni', ':bitmapplasma', ':hellogl2', ':gles3jni', ':hello_jni_callback', ':helloneon', ':san_angeles', ':sensorgraph', ':nativeplasma', ':nativeactivity', ':nativeaudio', ':nativemedia', ':teapotclassic', ':moreteapots', ':choreographer'
+include ':app', ':hellojni', ':bitmapplasma', ':hellogl2', ':gles3jni', ':hello_jni_callback', ':helloneon', ':san_angeles', ':sensorgraph', ':nativeplasma', ':nativeactivity', ':nativeaudio', ':nativemedia', ':teapotclassic', ':moreteapots', ':choreographer', ':endlesstunnel'

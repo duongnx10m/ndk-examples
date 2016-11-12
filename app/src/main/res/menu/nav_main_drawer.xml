@@ -11,12 +11,12 @@
         <item
             android:id="@+id/nav_teapot"
             android:icon="@drawable/ic_source"
-            android:title="Tea Pot"></item>
+            android:title="TeaPot 3D"></item>
 
         <item
             android:id="@+id/nav_game"
             android:icon="@drawable/ic_source"
-            android:title="Mini Games"></item>
+            android:title="Mini Game"></item>
 
 
     </group>

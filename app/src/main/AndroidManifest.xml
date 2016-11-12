@@ -62,6 +62,14 @@
                 android:name="android.app.lib_name"
                 android:value="ChoreographerNativeActivity" />
         </activity>
+        <activity
+            android:name="com.duongnx.endlesstunnel.EndlessTunnelActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="game" />
+        </activity>
     </application>
 
 </manifest>

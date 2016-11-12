@@ -35,6 +35,7 @@ public class FrgNdkExample extends FrgBaseRecylceView {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        mActivity.setTitle("NDK EXAMPLES");
         if (mAdapter == null) {
             mAdapter = new MainAdapter(mActivity, NDK_EXAMPLES);
             mAdapter.setOnRecyclerItemClickListener(this);

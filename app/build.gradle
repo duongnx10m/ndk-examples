@@ -54,4 +54,6 @@ dependencies {
     compile project(':teapotclassic')
     compile project(':moreteapots')
     compile project(':choreographer')
+    compile project(':endlesstunnel')
+
 }

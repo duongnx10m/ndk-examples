@@ -14,11 +14,12 @@ import com.duongnx.ndk.examples.utils.Utils;
  * Created by duongnx on 11/12/16.
  */
 
-public class FrgAbout extends FrgBase {
+public class FrgAbout extends FrgBase implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.frg_about, container, false);
+        mRootView.findViewById(R.id.btFeedback).setOnClickListener(this);
         return mRootView;
     }
 
@@ -28,5 +29,10 @@ public class FrgAbout extends FrgBase {
         mActivity.setTitle("About");
         Utils.setTextWithLinks((TextView) mRootView.findViewById(R.id.tvContent), Utils.fromHtml(getString(R.string.application_info_text, Utils.getVersionName(mActivity))));
         Utils.setTextWithLinks((TextView) mRootView.findViewById(R.id.tvDev), Utils.fromHtml(getString(R.string.developer_info_text)));
+    }
+
+    @Override
+    public void onClick(View view) {
+        Utils.openEmail(mActivity, "duongnguyenxuan10m@gmail.com");
     }
 }

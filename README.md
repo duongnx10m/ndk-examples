@@ -1,3 +1,11 @@
+## Developer
+Nguyen Xuan Duong
+**Email**
+duongnguyenxuan10m@gmail.com
+**LinkIn**
+[![View Profile]][LinKInProfile]
+[LinKInProfile]: https://www.linkedin.com/in/duong-nx-5b2131131
+
 ## Android NDK-Examples
 NDK-Examples client for android
 
@@ -9,6 +17,7 @@ NDK-Examples client for android
 <img src="screen-shots/1.png" width="200px" />
 <img src="screen-shots/3.png" width="200px" />
 <img src="screen-shots/4.png" width="200px" />
+<img src="screen-shots/6.png" width="200px" />
 
 ### Setup
 **Requirements**

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.duongnx.choreographer.ChoreographerNativeActivity;
 import com.duongnx.moreteapots.MoreTeapotsNativeActivity;
 import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
@@ -36,6 +37,9 @@ public class FrgTeaPot extends FrgBaseRecylceView {
                 break;
             case Defines.TEA_POTS_MORE:
                 intent = new Intent(mActivity, MoreTeapotsNativeActivity.class);
+                break;
+            case Defines.TEA_POTS_30FPS:
+                intent = new Intent(mActivity, ChoreographerNativeActivity.class);
                 break;
         }
         if (intent != null) {

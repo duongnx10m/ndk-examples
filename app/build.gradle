@@ -53,4 +53,5 @@ dependencies {
     compile project(':nativemedia')
     compile project(':teapotclassic')
     compile project(':moreteapots')
+    compile project(':choreographer')
 }

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bitmapplasma/bitmapplasma.iml" filepath="$PROJECT_DIR$/bitmapplasma/bitmapplasma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/choreographer/choreographer.iml" filepath="$PROJECT_DIR$/choreographer/choreographer.iml" />
       <module fileurl="file://$PROJECT_DIR$/gles3jni/gles3jni.iml" filepath="$PROJECT_DIR$/gles3jni/gles3jni.iml" />
       <module fileurl="file://$PROJECT_DIR$/hello_jni_callback/hello_jni_callback.iml" filepath="$PROJECT_DIR$/hello_jni_callback/hello_jni_callback.iml" />
       <module fileurl="file://$PROJECT_DIR$/hellogl2/hellogl2.iml" filepath="$PROJECT_DIR$/hellogl2/hellogl2.iml" />

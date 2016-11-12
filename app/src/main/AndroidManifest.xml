@@ -57,7 +57,11 @@
                 android:name="android.app.lib_name"
                 android:value="MoreTeapotsNativeActivity" />
         </activity>
-
+        <activity android:name="com.duongnx.choreographer.ChoreographerNativeActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="ChoreographerNativeActivity" />
+        </activity>
     </application>
 
 </manifest>

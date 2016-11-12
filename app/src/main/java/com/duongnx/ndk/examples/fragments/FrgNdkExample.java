@@ -27,15 +27,13 @@ public class FrgNdkExample extends FrgBaseRecylceView {
     public static final String[] NDK_EXAMPLES = {
             Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2,
             Defines.GLES3_JNI, Defines.JNI_CALLBACK, Defines.HELLO_NEON,
-            Defines.SAN_ANGELES, Defines.SENSOR_GRAPH,
-            Defines.NATIVE_PLASMA, Defines.NATIVE_ACTIVITY,
-            Defines.NATIVE_AUDIO, Defines.NATIVE_MEDIA
+            Defines.SAN_ANGELES, Defines.SENSOR_GRAPH
     };
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mActivity.setTitle("NDK EXAMPLES");
+        mActivity.setTitle("Simple Examples");
         if (mAdapter == null) {
             mAdapter = new MainAdapter(mActivity, NDK_EXAMPLES);
             mAdapter.setOnRecyclerItemClickListener(this);

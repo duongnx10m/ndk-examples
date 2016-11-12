@@ -6,17 +6,25 @@
             android:id="@+id/nav_ndk_ex"
             android:checked="true"
             android:icon="@drawable/ic_source"
-            android:title="Ndk Examples"></item>
+            android:title="Simple Examples"></item>
+        <item
+            android:id="@+id/nav_native"
+            android:icon="@drawable/ic_trending_up_white_24dp"
+            android:title="Native Activities"></item>
 
         <item
             android:id="@+id/nav_teapot"
-            android:icon="@drawable/ic_source"
+            android:icon="@drawable/ic_local_library_white_24dp"
             android:title="TeaPot 3D"></item>
 
         <item
             android:id="@+id/nav_game"
-            android:icon="@drawable/ic_source"
+            android:icon="@drawable/ic_bookmark_white_24dp"
             android:title="Mini Game"></item>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="About"></item>
 
 
     </group>

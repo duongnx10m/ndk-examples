@@ -20,7 +20,7 @@ public class FrgTeaPot extends FrgBaseRecylceView {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mActivity.setTitle("TEAPOT 3D");
+        mActivity.setTitle("TeaPot 3D");
         if (mAdapter == null) {
             mAdapter = new MainAdapter(mActivity, DATAS);
             mAdapter.setOnRecyclerItemClickListener(this);

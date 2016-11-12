@@ -22,6 +22,7 @@ import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
 import com.duongnx.ndk.examples.fragments.FrgMiniGame;
+import com.duongnx.ndk.examples.fragments.FrgNative;
 import com.duongnx.ndk.examples.fragments.FrgNdkExample;
 import com.duongnx.ndk.examples.fragments.FrgTeaPot;
 import com.duongnx.ndk.examples.utils.Utils;
@@ -94,6 +95,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_teapot:
                 changeMenuFragment(new FrgTeaPot());
+                break;
+            case R.id.nav_native:
+                changeMenuFragment(new FrgNative());
                 break;
             case R.id.nav_game:
                 changeMenuFragment(new FrgMiniGame());

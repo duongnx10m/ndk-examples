@@ -25,7 +25,7 @@ public class FrgMiniGame extends FrgBase {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mActivity.setTitle("MINI GAME");
+        mActivity.setTitle("Mini Game");
         mRootView.findViewById(R.id.btPlay).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

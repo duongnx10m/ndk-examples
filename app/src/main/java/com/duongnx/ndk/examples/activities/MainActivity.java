@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -20,6 +21,7 @@ import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
 import com.duongnx.ndk.examples.fragments.FrgNdkExample;
+import com.duongnx.ndk.examples.fragments.FrgTeaPot;
 import com.duongnx.ndk.examples.utils.Utils;
 
 /**
@@ -36,11 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         initViews();
         setTitle(R.string.title_name);
 
-        FrgNdkExample frgNdkExample = new FrgNdkExample();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.content, frgNdkExample);
-        fragmentTransaction.addToBackStack(frgNdkExample.getClass().getSimpleName());
-        fragmentTransaction.commitAllowingStateLoss();
+        changeMenuFragment(new FrgNdkExample());
     }
 
     private void initViews() {
@@ -85,6 +83,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_ndk_ex:
+                changeMenuFragment(new FrgNdkExample());
+                break;
+            case R.id.nav_teapot:
+                changeMenuFragment(new FrgTeaPot());
+                break;
+        }
         return true;
     }
+
+
+    public void changeMenuFragment(Fragment fragment) {
+        if (fragment != null) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.content, fragment);
+            fragmentTransaction.addToBackStack(fragment.getClass().getSimpleName());
+            fragmentTransaction.commitAllowingStateLoss();
+        }
+    }
+
 }

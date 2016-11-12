@@ -3,15 +3,8 @@ package com.duongnx.ndk.examples.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.duongnx.ndk.examples.Defines;
-import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.activities.AccelerometerGraphActivity;
 import com.duongnx.ndk.examples.activities.GL2JNIActivity;
 import com.duongnx.ndk.examples.activities.GLES3JNIActivity;
@@ -29,10 +22,7 @@ import com.duongnx.ndk.examples.adapter.MainAdapter;
  * Created by duongnx on 11/12/16.
  */
 
-public class FrgNdkExample extends FrgBase implements MainAdapter.OnRecyclerItemClickListener {
-
-    private RecyclerView recyclerView;
-    private MainAdapter mAdapter;
+public class FrgNdkExample extends FrgBaseRecylceView {
 
     public static final String[] NDK_EXAMPLES = {
             Defines.HELLO_JNI, Defines.BITMAP_PLASMA, Defines.HELLO_GL2,
@@ -42,31 +32,16 @@ public class FrgNdkExample extends FrgBase implements MainAdapter.OnRecyclerItem
             Defines.NATIVE_AUDIO, Defines.NATIVE_MEDIA
     };
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mRootView = inflater.inflate(R.layout.frg_ndk_example, container, false);
-        return mRootView;
-    }
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.d("duongnx", "onActivityCreated======>" + this.getClass().getSimpleName());
-        recyclerView = (RecyclerView) mRootView.findViewById(R.id.recyclerView);
-        initListView();
         if (mAdapter == null) {
             mAdapter = new MainAdapter(mActivity, NDK_EXAMPLES);
             mAdapter.setOnRecyclerItemClickListener(this);
         }
-
         recyclerView.setAdapter(mAdapter);
     }
 
-    private void initListView() {
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(mActivity);
-        recyclerView.setLayoutManager(layoutManager);
-    }
 
     @Override
     public void onRecyclerItemClick(int position) {

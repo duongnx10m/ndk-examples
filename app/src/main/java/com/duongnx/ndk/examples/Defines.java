@@ -34,4 +34,8 @@ public class Defines {
     public static final String NATIVE_ACTIVITY = "native - activity";
     public static final String NATIVE_AUDIO = "native - audio";
     public static final String NATIVE_MEDIA = "native - media";
+
+    public static final String TEA_POTS_CLASSIC = "classic - teapot";
+    public static final String TEA_POTS_MORE = "more - teapots";
+    public static final String TEA_POTS_30FPS = "choreographer-30fps";
 }

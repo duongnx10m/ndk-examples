@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (fragment != null) {
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.content, fragment);
-            fragmentTransaction.addToBackStack(fragment.getClass().getSimpleName());
+            //fragmentTransaction.addToBackStack(fragment.getClass().getSimpleName());
             fragmentTransaction.commitAllowingStateLoss();
         }
     }

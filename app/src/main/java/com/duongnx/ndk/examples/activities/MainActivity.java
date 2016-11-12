@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import com.duongnx.ndk.examples.Defines;
 import com.duongnx.ndk.examples.R;
 import com.duongnx.ndk.examples.adapter.MainAdapter;
+import com.duongnx.ndk.examples.fragments.FrgAbout;
 import com.duongnx.ndk.examples.fragments.FrgMiniGame;
 import com.duongnx.ndk.examples.fragments.FrgNative;
 import com.duongnx.ndk.examples.fragments.FrgNdkExample;
@@ -101,6 +102,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_game:
                 changeMenuFragment(new FrgMiniGame());
+                break;
+            case R.id.nav_about:
+                changeMenuFragment(new FrgAbout());
                 break;
         }
         return true;

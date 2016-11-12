@@ -21,8 +21,6 @@
         android:layout_marginTop="36dp"
         android:gravity="center"
         android:text="NDK EX"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/white" />
 </RelativeLayout>

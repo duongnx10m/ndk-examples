@@ -56,4 +56,20 @@
         check media file is copied to android device</string>
 
 
+    <string name="application_info">Application Info</string>
+    <string name="developer_info">Developer Info</string>
+    <string name="application_info_text">
+        <![CDATA[
+            <p>Version: %1$s</p>
+            <p>This application is open source at <a href="https://github.com/duongnx10m/ndk-examples">github.com/duongnx10m/ndk-examples</a></p>
+        ]]>
+    </string>
+
+    <string name="developer_info_text" translatable="false">
+        <![CDATA[
+            <p>Duong Nguyen Xuan(DuongNX)</p>
+            <p><a href="https://github.com/duongnx10m">Github</a></p>
+        ]]>
+    </string>
+    <string name="feedback">Feed back</string>
 </resources>

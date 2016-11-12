@@ -8,6 +8,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,8 @@ import com.duongnx.ndk.examples.utils.Utils;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private DrawerLayout drawerLayout;
+
     // Used to load the 'native-lib' library on application startup.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         // set up drawerlayout
-        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0);
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        closeDrawer();
         switch (item.getItemId()) {
             case R.id.nav_ndk_ex:
                 changeMenuFragment(new FrgNdkExample());
@@ -102,6 +106,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentTransaction.addToBackStack(fragment.getClass().getSimpleName());
             fragmentTransaction.commitAllowingStateLoss();
         }
+    }
+
+    public void openDrawer() {
+        drawerLayout.openDrawer(GravityCompat.START);
+    }
+
+    public void closeDrawer() {
+        drawerLayout.closeDrawer(GravityCompat.START);
     }
 
 }

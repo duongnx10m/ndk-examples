@@ -47,6 +47,17 @@
         </activity>
         <activity android:name=".activities.NativeAudioActivity"></activity>
         <activity android:name=".activities.NativeMediaActivity"></activity>
+        <activity android:name="com.duongnx.teapotclassic.TeapotNativeActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="TeapotNativeActivity" />
+        </activity>
+        <activity android:name="com.duongnx.moreteapots.MoreTeapotsNativeActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="MoreTeapotsNativeActivity" />
+        </activity>
+
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/hellogl2/hellogl2.iml" filepath="$PROJECT_DIR$/hellogl2/hellogl2.iml" />
       <module fileurl="file://$PROJECT_DIR$/hellojni/hellojni.iml" filepath="$PROJECT_DIR$/hellojni/hellojni.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloneon/helloneon.iml" filepath="$PROJECT_DIR$/helloneon/helloneon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moreteapots/moreteapots.iml" filepath="$PROJECT_DIR$/moreteapots/moreteapots.iml" />
       <module fileurl="file://$PROJECT_DIR$/nativeactivity/nativeactivity.iml" filepath="$PROJECT_DIR$/nativeactivity/nativeactivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/nativeaudio/nativeaudio.iml" filepath="$PROJECT_DIR$/nativeaudio/nativeaudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/nativemedia/nativemedia.iml" filepath="$PROJECT_DIR$/nativemedia/nativemedia.iml" />
@@ -16,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/ndk-examples.iml" filepath="$PROJECT_DIR$/ndk-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/san_angeles/san_angeles.iml" filepath="$PROJECT_DIR$/san_angeles/san_angeles.iml" />
       <module fileurl="file://$PROJECT_DIR$/sensorgraph/sensorgraph.iml" filepath="$PROJECT_DIR$/sensorgraph/sensorgraph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teapotclassic/teapotclassic.iml" filepath="$PROJECT_DIR$/teapotclassic/teapotclassic.iml" />
     </modules>
   </component>
 </project>

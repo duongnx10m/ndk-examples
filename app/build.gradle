@@ -51,4 +51,6 @@ dependencies {
     compile project(':nativeactivity')
     compile project(':nativeaudio')
     compile project(':nativemedia')
+    compile project(':teapotclassic')
+    compile project(':moreteapots')
 }

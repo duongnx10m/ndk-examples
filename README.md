@@ -1,10 +1,10 @@
 ### Developer
-Nguyen Xuan Duong
-
+**Name**
+	- Nguyen Xuan Duong
 **Email**
-	duongnguyenxuan10m@gmail.com
+	- duongnguyenxuan10m@gmail.com
 **LinkIn**
-	[[View Profile]][LinKInProfile]
+	- [[View Profile]][LinKInProfile]
 [LinKInProfile]: https://www.linkedin.com/in/duong-nx-5b2131131
 
 ### Android NDK-Examples
